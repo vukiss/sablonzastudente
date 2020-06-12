@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sablonzastudente</title>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+
+           class Student {
+               constructor(name, address, phone, course) {
+                  this.name = name;
+                  this.address = address;
+                  this.phone = phone;
+                  this.course = course;
+               }
+
+               getInfo() {
+                   return "Name: " + this.name + "\n" +
+                      "Address: " + this.address + "\n" +
+                      "Phone: " + this.phone + "\n" +
+                      "Course: " + this.course + "\n"
+               }
+           }
+
+           
+
+           var student1 = new Student("Aleksa Colovic", "Beogradska 15", 065-77335, "Filozofija");
+           var student2 = new Student('David Ljubinkovic', 'Sare Bernar 5', 060-33445, 'Politika');
+           var student3 = new Student('Ivan Stosic', 'Zila Verna 30', 063-4499, 'Pekar-Mesar');
+
+           console.log(student3.getInfo());
+
+           
+           
+            
+
+        </script>
+    </body>
+</html>
